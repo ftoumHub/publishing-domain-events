@@ -10,9 +10,6 @@ import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-/**
- * @author Zoltan Altfatter
- */
 @Entity
 @Data
 @AllArgsConstructor

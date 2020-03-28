@@ -9,9 +9,6 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author Zoltan Altfatter
- */
 @RestController
 public class BankTransferController {
 
@@ -24,6 +21,7 @@ public class BankTransferController {
     @PostMapping("/bank-transfers")
     public ResponseEntity<CreateBankTransferResponse> transfer(@RequestBody CreateBankTransferRequest request) {
         String bankTransferId = service.completeTransfer(new BankTransfer(request.from, request.to, request.getAmount()));
+
         return new ResponseEntity(new CreateBankTransferResponse(bankTransferId), HttpStatus.CREATED);
     }
 

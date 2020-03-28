@@ -7,9 +7,6 @@ import org.springframework.transaction.event.TransactionalEventListener;
 
 import java.util.Random;
 
-/**
- * @author Zoltan Altfatter
- */
 @Service
 @Slf4j
 public class BankTransferProcessor {

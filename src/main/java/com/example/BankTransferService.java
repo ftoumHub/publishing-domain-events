@@ -5,9 +5,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * @author Zoltan Altfatter
- */
 @Service
 public class BankTransferService {
 

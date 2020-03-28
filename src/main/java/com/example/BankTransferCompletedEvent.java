@@ -2,9 +2,6 @@ package com.example;
 
 import lombok.*;
 
-/**
- * @author Zoltan Altfatter
- */
 @Value
 public class BankTransferCompletedEvent {
 
